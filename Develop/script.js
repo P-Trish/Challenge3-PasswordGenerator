@@ -9,6 +9,31 @@ var numbers = "1234567890";
 var userChoice = "";
 var password = "";
 
+function userPreference () {
+  upperCase = confirm ("Do you want uppercase letters?");
+  if (upperCase === true) {
+    userChoice += upperCase;
+  }
+  lowerCase = confirm ("Do you want lowercase letters?");
+  if (lowerCase === true) {
+    userChoice += lowerCase;
+  }
+  specialCharacters = confirm ("Do you want special characters?");
+  if (specialCharacters === true); {
+    userChoice += specialCharacters;
+  }
+  numbers = confirm ("Do you want numbers?");
+  if (numbers === true) {
+    userChoice += numbers;
+  }
+  console.log(userChoice.length);
+  console.log(userChoice);
+  if (userChoice.length === 0){
+    alert ("Please make at least one selection");
+    userPreference();
+  }
+  }
+
 
 // Write password to the #password input
 function generatePassword () {
@@ -21,28 +46,6 @@ function generatePassword () {
   userPreference()
   }
 
-  function userPreference () {
-    upperCase = confirm ("Do you want uppercase letters?")
-    if (upperCase === "yes") {
-      userChoice += upperCase;
-    }
-    lowerCase = confirm ("Do you want lowercase letters?")
-    if (lowerCase === "yes") {
-      userChoice += lowerCase;
-    }
-    specialCharacters = confirm ("Do you want special characters?")
-    if (specialCharacters === "yes") {
-      userChoice += specialCharacters;
-    }
-    numbers = confirm ("Do you want numbers?")
-    if (numbers === "yes") {
-      userChoice += numbers;
-    }
-    if (userChoice.length === 0){
-      alert ("Please make at least one selection");
-      userPreference();
-    }
-    }
   
 
 

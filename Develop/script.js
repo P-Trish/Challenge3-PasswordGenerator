@@ -72,12 +72,10 @@ generateBtn.addEventListener("click", writePassword);
 
 
 // PSEUDO-CODE:
+// user must be PROMPTED for length of password > 8 / < 128 
 // when asked for character types to include in the password, I confirm whether or not to include lowercase, uppercase, numbers, and/or special characters 
-
 // confirm if the user wants lowercase, uppercase, numbers, and/or special characters
-
-// if the user says NO to all of them, then there has to be a promt that says "please choose one option because password needs to be stronger"
-
+// if the user says NO to all of them, then there has to be a promt that says "please choose one option"
 // once all prompts are answered a password is generated that matches the selected criteria 
 // when the password is generated textContent "password"
 // password is display in an alert 

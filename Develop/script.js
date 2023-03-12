@@ -69,7 +69,7 @@ function copyToClipboard() {
   var copyText = document.getElementById("password");
   copyText.select();
   document.execCommand("copy")
-  alert("Copied the text: " + copyText.value);
+  alert("Copied Password: " + copyText.value);
 }
 
 

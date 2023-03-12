@@ -65,6 +65,14 @@ function writePassword() {
   passwordText.value = password;
 }
 
+function copyToClipboard() {
+  var copyText = document.getElementById("password");
+  copyText.select();
+  document.execCommand("copy")
+  alert("Copied the text: " + copyText.value);
+}
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -78,6 +86,8 @@ generateBtn.addEventListener("click", writePassword);
 // if the user says NO to all of them, then there has to be a promt that says "please choose one option"
 // once all prompts are answered a password is generated that matches the selected criteria 
 // when the password is generated textContent "password"
-// password is display in an alert 
+// password is display in an alert or written on the page 
 
 // ability to copy password to clipboard
+  // copies password  - create copy password button in html
+  // copies password automaticall for user to paste elsewhere

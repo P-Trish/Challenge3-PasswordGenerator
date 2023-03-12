@@ -19,6 +19,13 @@ function generatePassword () {
 
   userPreference();
   var password = "";
+  for (var i = 0; i < length; i++) {
+    let index = Math.floor(Math.random () *
+    userChoice.length);
+
+    password += userChoice[index];
+  }
+
   console.log("done");
   return password;
 }
@@ -47,32 +54,18 @@ function userPreference () {
       alert ("Please make at least one selection");
       userPreference();
     }
-}
-  
-function shufflePassword() {
-  var password = "";
-  for (var i = 0; i < length; i++) {
-    let index = Math.floor(Math.random () *
-    userChoice.length);
 
-    password += userChoice[index];
-  }
-  return password;
 }
-
 
 function writePassword() {
-  clearChoices ();
+  userChoice = "";
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 }
 
-function clearChoices() {
-  userChoice = "";
 
-}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 

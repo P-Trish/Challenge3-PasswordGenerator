@@ -79,4 +79,5 @@ generateBtn.addEventListener("click", writePassword);
 // once all prompts are answered a password is generated that matches the selected criteria 
 // when the password is generated textContent "password"
 // password is display in an alert 
+
 // ability to copy password to clipboard

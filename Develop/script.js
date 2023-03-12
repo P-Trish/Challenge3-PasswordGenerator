@@ -56,7 +56,6 @@ function userPreference () {
     }
 
 }
-
 function writePassword() {
   userChoice = "";
   var password = generatePassword();
@@ -64,15 +63,12 @@ function writePassword() {
 
   passwordText.value = password;
 }
-
 function copyToClipboard() {
   var copyText = document.getElementById("password");
   copyText.select();
   document.execCommand("copy")
   alert("Copied Password: " + copyText.value);
 }
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -81,13 +77,15 @@ generateBtn.addEventListener("click", writePassword);
 
 // PSEUDO-CODE:
 // user must be PROMPTED for length of password > 8 / < 128 
-// when asked for character types to include in the password, I confirm whether or not to include lowercase, uppercase, numbers, and/or special characters 
-// confirm if the user wants lowercase, uppercase, numbers, and/or special characters
-// if the user says NO to all of them, then there has to be a promt that says "please choose one option"
+// when asked for character types to include in the password, I CONFIRM whether or not to include lowercase, uppercase, numbers, and/or special characters 
+// CONFIRM if the user wants lowercase, uppercase, numbers, and/or special characters
+// if the user says NO to all of them, then there has to be an ALERT that says "please choose one option"
 // once all prompts are answered a password is generated that matches the selected criteria 
 // when the password is generated textContent "password"
-// password is display in an alert or written on the page 
+// password is displayed in an alert or written on the page 
 
 // ability to copy password to clipboard
   // copies password  - create copy password button in html
-  // copies password automaticall for user to paste elsewhere
+  // copies password automatically for user to paste elsewhere
+  // create function to copy password
+  // html button created to match
